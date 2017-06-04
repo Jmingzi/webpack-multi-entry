@@ -6,7 +6,7 @@ var assetsPath = utils.assetsPath
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 var mutiHtmlPlugin = require('./multiEntryHtmlPlugin')
-mutiHtmlPlugin.setEntry('src/view/**/index.js')
+mutiHtmlPlugin.setEntry('src/views/**/index.js')
 var result = mutiHtmlPlugin.produce()
 
 module.exports = {
