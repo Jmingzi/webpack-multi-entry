@@ -11,7 +11,8 @@ var baseWebpackConfig = require('./webpack.base')
 // add hot-reload
 Object.keys(baseWebpackConfig.entry).forEach(function(name) {
     baseWebpackConfig.entry[name] = [
-        'webpack-dev-server/client?http://localhost:8080/',
+        // 'webpack-dev-server/client?http://localhost:8080/',
+        'webpack-hot-middleware/client?http://localhost:8080',
         'webpack/hot/only-dev-server'
     ].concat(baseWebpackConfig.entry[name])
 })

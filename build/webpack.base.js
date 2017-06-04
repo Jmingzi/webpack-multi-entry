@@ -37,7 +37,7 @@ module.exports = {
                 include: [resolve('src')],
                 use: ExtractTextPlugin.extract({
                     // fallback: "style-loader",
-                    use: ['css-loader', 'sass-loader']
+                    use: ['css-loader', 'autoprefixer-loader', 'sass-loader']
                 })
             },
             {
