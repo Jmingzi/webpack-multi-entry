@@ -1,8 +1,8 @@
 # webpack-multi-entry
-webpack多入口文件脚手架
+以多入口文件为基础的方式建立的webpack脚手架
 
 打包命令
-```yaml
+```
 // 测试及启动服务
 npm run dev
 
